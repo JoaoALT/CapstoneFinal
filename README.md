@@ -126,72 +126,83 @@ Se desarrollará un **sistema operativo ligero** entregado en una Raspberry Pi  
 ## Criterios de Aceptación
 
 ### 1. Accesibilidad y Usabilidad
-- **Scenario 1:**  
+```gherkin
   Given que la Raspberry Pi 5 está encendida  
   When el estudiante inicia el sistema  
   Then el sistema operativo debe cargar en menos de 30 segundos y mostrar una interfaz con íconos claros y menús de máximo 3 niveles.  
+```
 
-- **Scenario 2:**  
+```gherkin
   Given que no hay conexión a internet  
   When el estudiante navega en los módulos  
   Then al menos el 80% de las funcionalidades deben estar disponibles sin interrupciones.  
+```
 
 ---
 
 ### 2. Contenidos Educativos
-- **Scenario 1:**  
+```gherkin
   Given que el sistema está instalado  
   When un estudiante accede al menú de asignaturas  
   Then debe encontrar al menos módulos de matemáticas, ciencias y lenguaje.  
+```
 
-- **Scenario 2:**  
+```gherkin
   Given que un profesor accede al panel de administración  
   When empieza un módulo de asignatura  
   Then debe visualizar los contenidos de las clases de la asignatura y poder empezar la clase a la par de sus estudiantes.  
+```
 
-- **Scenario 3:**  
+```gherkin
   Given que un estudiante abre un módulo  
   When selecciona un tema  
   Then debe poder interactuar con al menos 10 actividades prácticas en ese módulo.  
+```
 
 ---
 
 ### 3. Impacto en la Alfabetización Digital
-- **Scenario 1:**  
+```gherkin
   Given que un estudiante tiene su usuario registrado  
   When inicia sesión y entra en un módulo  
   Then debe poder completar actividades y guardar su progreso localmente sin ayuda.  
+```
 
-- **Scenario 2:**  
+```gherkin
   Given que un estudiante usa el sistema  
   When realiza actividades y responde ejercicios  
   Then todos los eventos (tiempo, respuestas, resultados) deben quedar almacenados en la base de datos local.  
+```
 
 ---
 
 ### 4. Soporte a Docentes
-- **Scenario 1:**  
+```gherkin
   Given que un profesor accede al panel desde un navegador en la red local  
   When consulta el desempeño de un grupo  
   Then debe visualizar métricas por estudiante (tiempo en plataforma, porcentaje de actividades, desempeño).  
+```
 
-- **Scenario 2:**  
+```gherkin
   Given que existen datos registrados  
   When el docente solicita un reporte  
   Then debe poder exportarse en formato CSV y PDF.  
+```
 
 ---
 
 ### 5. Conectividad Local
-- **Scenario 1:**  
+```gherkin
   Given que la Raspberry Pi está configurada como hotspot  
   When estudiantes se conectan desde diferentes dispositivos  
   Then hasta 20 usuarios deben poder acceder de forma concurrente a los contenidos.  
+```
 
-- **Scenario 2:**  
+```gherkin
   Given que los estudiantes están conectados a la red del colegio  
   When abren un navegador web y acceden a `http://raspberry.local`  
   Then deben poder visualizar los módulos educativos sin depender de internet externo.  
+```
 
 ---
 
