@@ -1,220 +1,145 @@
-# Proyecto: [NOMBRE_DE_LA_SOLUCIÓN]  
-*Sistema operativo educativo para colegios rurales (Raspberry Pi + módulos de aprendizaje)*
+# Proyecto: Aula Digital Rural
+*Plataforma educativa offline para colegios rurales (Raspberry Pi + Kolibri + Kiwix)*
 
 ## 📋 Tabla de contenidos
-1. [Roles](#roles)  
-2. [State & Definitions](#state--definitions)  
-   - [Definition of Ready](#definition-of-ready)  
-   - [Definition of Done](#definition-of-done)  
-3. [Descripción del proyecto](#descripción-del-proyecto)  
-4. [Cómo funciona (resumen técnico)](#cómo-funciona-resumen-técnico)  
-5. [Impacto y beneficios](#impacto-y-beneficios)  
-6. [Recursos y requisitos de hardware](#recursos-y-requisitos-de-hardware)  
-7. [Timeline y hitos](#timeline-y-hitos)  
-8. [Historias de usuario (resumidas)](#historias-de-usuario-resumidas)  
-9. [Criterios de aceptación técnicos (Gherkin / Given-When-Then)](#criterios-de-aceptación-técnicos-gherkin--given-when-then)  
-10. [Instalación rápida / Despliegue (guía)](#instalación-rápida--despliegue-guía)  
-11. [Medición, validación y métricas](#medición-validación-y-métricas)  
-12. [Contribuir & Contacto](#contribuir--contacto)  
+1. [Roles](#roles)
+2. [State & Definitions](#state--definitions)
+   - [Definition of Ready](#definition-of-ready)
+   - [Definition of Done](#definition-of-done)
+3. [Descripción del proyecto](#descripción-del-proyecto)
+4. [Cómo funciona (resumen técnico)](#cómo-funciona-resumen-técnico)
+5. [Impacto y beneficios](#impacto-y-beneficios)
+6. [Recursos y requisitos de hardware](#recursos-y-requisitos-de-hardware)
+7. [Timeline y hitos](#timeline-y-hitos)
+8. [Historias de usuario (resumidas)](#historias-de-usuario-resumidas)
+9. [Criterios de aceptación técnicos (Gherkin / Given-When-Then)](#criterios-de-aceptación-técnicos-gherkin--given-when-then)
+10. [Instalación rápida / Despliegue (guía)](#instalación-rápida--despliegue-guía)
+11. [Medición, validación y métricas](#medición-validación-y-métricas)
+12. [Contribuir & Contacto](#contribuir--contacto)
 13. [Licencia](#licencia)
 
+---
 
 ## Roles
-- **Po (Product Owner):** Joao Muñoz  
-- **Sm (Scrum Master):** Giovanni Moreno  
-- **Tl (Tech Lead):** Santiago Gavilán  
-- **Secretaria del Tl:** John Rojas
+- **Product Owner:** Joao Muñoz
+- **Scrum Master:** Giovanni Moreno
+- **Tech Lead:** Santiago Gavilán
+- **Equipo de Desarrollo:** John Rojas
 
+---
 
 ## State & Definitions
 
 ### Definition of Ready
 Antes de comenzar un sprint / tarea, **todas** las siguientes condiciones deben cumplirse:
-- [ ] Historia o task con **Criterios de aceptación claros y medibles**.  
-- [ ] Mockups o wireframes (UI) mínimos para la vista principal.  
-- [ ] Contenidos iniciales para los primeros módulos (matemáticas, ciencias, lenguaje).  
-- [ ] Raspberry Pi 5 (8GB) y antena disponibles para pruebas físicas.  
-- [ ] Plan de red local (IP, SSID), y acceso al colegio piloto confirmado.  
-- [ ] Data model inicial (esquema SQLite) y definiciones de logs (events).  
-- [ ] Script/Playbook de despliegue (Bash/Ansible) preparado y probado en entorno dev.
+- [ ] Historia o task con **Criterios de aceptación claros, específicos y medibles**.
+- [ ] Canales de **Kolibri** y archivos **ZIM de Kiwix** seleccionados y descargados para el sprint.
+- [ ] Hardware de prueba disponible: **Raspberry Pi 4 (4GB)**, SD Card de alta resistencia y Punto de Acceso Wi-Fi dedicado.
+- [ ] Plan de red local definido (IP estática del servidor, SSID para el AP).
+- [ ] Modelo de datos de **Kolibri** comprendido para la extracción de métricas.
+- [ ] **Script de aprovisionamiento** (Bash/Ansible) preparado para configurar la imagen base de DietPi.
 
 ### Definition of Done
 Una historia / tarea se considera terminada cuando **todas** estas condiciones se cumplen:
-- [ ] Código revisado y mergeado a `main` (o rama equivalente).  
-- [ ] Tests unitarios con cobertura razonable (según componente).  
-- [ ] Tests de integración o E2E para funciones críticas (login, guardado, exportar).  
-- [ ] Criterios de aceptación (Given/When/Then) verificados manual o automáticamente.  
-- [ ] Documentación actualizada (README, runbook de instalación).  
-- [ ] Instalador y script de configuración probados y validados (instalación < 1h).  
-- [ ] Despliegue en Raspberry Pi de prueba verificado; performance dentro de límites definidos.
+- [ ] Configuraciones aplicadas y mergeadas a la rama principal del repositorio de aprovisionamiento.
+- [ ] Pruebas funcionales de los servicios (Kolibri, Kiwix) superadas.
+- [ ] Criterios de aceptación (Given/When/Then) verificados en el hardware de prueba.
+- [ ] **Documentación actualizada** (README, guía de actualización de contenido).
+- [ ] **Imagen maestra (`.img`) generada** y probada con una instalación limpia.
+- [ ] Despliegue en Raspberry Pi de prueba verificado; el sistema arranca y los servicios son accesibles en < 2 minutos.
 
-
+---
 
 ## Descripción del proyecto
-**Visión (2026):** Para 2026 habremos implementado la solución en al menos un colegio rural, ayudando a estudiantes y profesores a familiarizarse con nuevas tecnologías y avanzando su alfabetización digital.
+**Visión (2026):** Para 2026, habremos implementado la solución "Aula Digital Rural" en al menos tres colegios rurales, proporcionando a más de 200 estudiantes y sus profesores acceso a recursos educativos digitales de primer nivel y mejorando tangiblemente su alfabetización digital.
 
-**Reto:** ¿Cómo facilitar que estudiantes de primaria y secundaria en municipios rurales desarrollen competencias de aprendizaje digital?
+**Reto:** ¿Cómo facilitar que estudiantes de primaria y secundaria en municipios rurales desarrollen competencias de aprendizaje digital de forma autónoma y sostenible, sin depender de una conexión a internet?
 
-**Nombre de la solución:** `[POR DEFINIR]`
+**Nombre de la solución:** `Aula Digital Rural`
 
-**Resumen:**  
-Se desarrollará un **sistema operativo ligero** entregado en una Raspberry Pi  que actúe como servidor/local node en el colegio. Dentro correrá la plataforma educativa con módulos por asignatura y grado, soporte offline, funcionalidades de IA para personalización y un panel docente para seguimiento y exportación de reportes.
+**Resumen:**
+Se creará una **imagen de sistema operativo preconfigurada y endurecida** para una Raspberry Pi, que actuará como un servidor local en el colegio. Esta imagen contendrá la plataforma de aprendizaje **Kolibri**, cargada con contenido curricular, y **Kiwix**, con una copia completa de Wikipedia. La solución generará su propia red Wi-Fi, permitiendo a los estudiantes conectarse y aprender desde cualquier dispositivo con un navegador.
 
+---
 
 ## Cómo funciona (resumen técnico)
-- La **Raspberry Pi** actúa como nodo central / servidor local.  
-- Un sistema operativo optimizado arranca y levanta:
-  - Un servidor web ligero (Nginx/Lighttpd) que sirve la UI (HTML5/CSS/JS).
-  - Backend ligero con almacenamiento local (SQLite) y API REST interna.
-  - Punto de acceso Wi-Fi para que dispositivos de estudiantes se conecten sin internet.
-- Contenidos en **HTML5 interactivo** (multimedia comprimida H.264/AAC) y metadatos en JSON/YAML.  
-- Módulos con actividades interactivas (mínimo 10 por módulo) y registro completo de interacciones.  
-- Panel docente accesible desde la red local (`http://raspberry.local:8080`) con export CSV/PDF.  
-- Sincronización remota (cuando haya internet) mediante colas (MQTT/RabbitMQ) para subir logs y respaldos remotos.
+- **Hardware:** Una **Raspberry Pi 4** actúa como el servidor central.
+- **Sistema Operativo:** Se utiliza **DietPi** (una distribución ultraligera basada en Debian) como base, configurada en modo **solo lectura (read-only)** para máxima fiabilidad y resistencia a cortes de energía.
+- **Servicios Principales:**
+    - **Kolibri:** Plataforma educativa que gestiona usuarios, contenido, lecciones y seguimiento del progreso. Accesible en `http://192.168.1.10:8080`.
+    - **Kiwix-serve:** Sirve una copia completa de Wikipedia y otros recursos offline. Accesible en `http://192.168.1.10:8100`.
+- **Red:** La Pi se conecta vía Ethernet a un **Punto de Acceso (AP) Wi-Fi dedicado**, que crea una red local (ej. SSID: `AulaDigital`) para los dispositivos de los estudiantes.
+- **Contenido:** Canales educativos de Kolibri (videos, ejercicios interactivos) y archivos ZIM de Kiwix (versiones offline de sitios web).
+- **Mantenimiento:** Las actualizaciones de contenido se realizan mediante "sneakernet" (llevando un USB al colegio) a través de la interfaz de Kolibri y scripts seguros.
 
+---
 
 ## Impacto y beneficios
-- **Meta:** Reducir la desalfabetización digital en un **50%** en 3 años en la comunidad intervenida.  
-- **Beneficios esperados:**  
-  - Aumento del rendimiento en pruebas estandarizadas.  
-  - Mayor autonomía de estudiantes en el uso de tecnologías.  
-  - Capacitación docente con efecto multiplicador en la comunidad.
+- **Meta:** Aumentar el tiempo de interacción con recursos digitales educativos en un **300%** en el primer año en la comunidad intervenida.
+- **Beneficios esperados:**
+    - Mejora del interés y la participación de los estudiantes en las materias.
+    - Desarrollo de la autonomía y habilidades de investigación en los estudiantes.
+    - Empoderamiento de los docentes con herramientas para personalizar el aprendizaje.
 
+---
 
 ## Recursos y requisitos de hardware
-- **Nodo central:** Raspberry Pi(microSD 128GB).  
-- **Conectividad:** Antena / adaptador Wi-Fi de mayor alcance (hotspot local).  
-- **Clientes:** Laptops / tablets / móviles que soporten navegador moderno.  
-- **Software requerido:** imagen del SO (pre-configurada), script de instalación, servidor web ligero, runtime backend, SQLite.
+- **Nodo Central:** **Raspberry Pi 4 (4GB)** con tarjeta microSD de alta resistencia (64GB).
+- **Conectividad:** **Punto de Acceso Wi-Fi dedicado** (ej. TP-Link Omada, Ubiquiti UniFi).
+- **Clientes:** Cualquier laptop, tableta o smartphone con un navegador web moderno.
+- **Software Requerido:** Imagen preconfigurada del SO (`auladigital.img`).
 
+---
 
 ## Timeline y hitos (sugerido)
-- **Meses 0:** Diseño, definición de contenidos iniciales y prototipado UI.  
-- **Meses 1-2:** Desarrollo MVP (módulos básicos + panel docente) + pruebas locales.  
-- **Meses 2-6:** Piloto en colegio rural (instalación, capacitación docentes, iteraciones).  
-- **Año 2-3:** Expansión, mejoras IA, monitoreo de impacto y consolidación.
+- **Mes 0:** Selección de contenidos, configuración de la imagen maestra y pruebas de laboratorio.
+- **Mes 1:** Despliegue del piloto en el primer colegio, configuración de la red local y capacitación inicial a docentes.
+- **Meses 2-6:** Acompañamiento, recolección de feedback, y primera actualización de contenido.
+- **Año 1-2:** Medición de impacto, refinamiento de la imagen del SO y planificación de la expansión a nuevos colegios.
+
+---
 
 ## Historias de Usuario
 
-- **Historia 1**  
-  Como estudiante de primaria en un colegio rural  
-  quiero tener una forma sencilla de entrar a la plataforma educativa  
-  para poder aprender mis materias usando herramientas digitales aunque no tenga internet en mi casa.  
+- **Historia 1**
+  Como estudiante de primaria, quiero acceder a juegos y videos de matemáticas desde la tableta del colegio para aprender a sumar de forma divertida.
 
-- **Historia 2**  
-  Como profesor de secundaria  
-  quiero usar los módulos digitales en mis clases  
-  para que los estudiantes aprendan mejor y se interesen más en los temas.  
+- **Historia 2**
+  Como profesor de ciencias, quiero asignar a mis estudiantes una investigación en la Wikipedia offline para que aprendan a buscar información sin riesgo de distracciones.
 
-- **Historia 3**  
-  Como estudiante  
-  quiero que el sistema me recomiende actividades según lo que sé y lo que no  
-  para poder mejorar poco a poco y no quedarme atrás.  
+- **Historia 3**
+  Como coach de Kolibri (profesor), quiero ver qué estudiantes han completado las lecciones de la semana para saber a quién necesito apoyar más.
 
-- **Historia 4**  
-  Como estudiante del colegio  
-  quiero que mis compañeros y yo podamos conectarnos fácilmente a la plataforma desde los equipos del colegio  
-  para que todos tengamos las mismas oportunidades de aprender.  
+- **Historia 4**
+  Como estudiante de bachillerato, quiero poder conectarme fácilmente desde mi celular a la red del colegio para repasar los temas vistos en clase.
 
-- **Historia 5**  
-  Como directivo del colegio  
-  quiero conocer cómo van progresando los estudiantes en el uso de la plataforma  
-  para ver si de verdad estamos reduciendo la brecha digital.  
+- **Historia 5**
+  Como directivo del colegio, quiero un reporte del uso de la plataforma para mostrar a los padres de familia el progreso en la adopción de tecnología.
 
+---
 
 ## Criterios de Aceptación
 
 ### 1. Accesibilidad y Usabilidad
 ```gherkin
-  Given que la Raspberry Pi 5 está encendida  
-  When el estudiante inicia el sistema  
-  Then el sistema operativo debe cargar en menos de 30 segundos y mostrar una interfaz con íconos claros y menús de máximo 3 niveles.  
-```
-
-```gherkin
-  Given que no hay conexión a internet  
-  When el estudiante navega en los módulos  
-  Then al menos el 80% de las funcionalidades deben estar disponibles sin interrupciones.  
-```
-
----
-
-### 2. Contenidos Educativos
-```gherkin
-  Given que el sistema está instalado  
-  When un estudiante accede al menú de asignaturas  
-  Then debe encontrar al menos módulos de matemáticas, ciencias y lenguaje.  
-```
-
-```gherkin
-  Given que un profesor accede al panel de administración  
-  When empieza un módulo de asignatura  
-  Then debe visualizar los contenidos de las clases de la asignatura y poder empezar la clase a la par de sus estudiantes.  
-```
-
-```gherkin
-  Given que un estudiante abre un módulo  
-  When selecciona un tema  
-  Then debe poder interactuar con al menos 10 actividades prácticas en ese módulo.  
-```
-
----
-
-### 3. Impacto en la Alfabetización Digital
-```gherkin
-  Given que un estudiante tiene su usuario registrado  
-  When inicia sesión y entra en un módulo  
-  Then debe poder completar actividades y guardar su progreso localmente sin ayuda.  
-```
-
-```gherkin
-  Given que un estudiante usa el sistema  
-  When realiza actividades y responde ejercicios  
-  Then todos los eventos (tiempo, respuestas, resultados) deben quedar almacenados en la base de datos local.  
-```
-
----
-
-### 4. Soporte a Docentes
-```gherkin
-  Given que un profesor accede al panel desde un navegador en la red local  
-  When consulta el desempeño de un grupo  
-  Then debe visualizar métricas por estudiante (tiempo en plataforma, porcentaje de actividades, desempeño).  
-```
-
-```gherkin
-  Given que existen datos registrados  
-  When el docente solicita un reporte  
-  Then debe poder exportarse en formato CSV y PDF.  
-```
-
----
-
-### 5. Conectividad Local
-```gherkin
-  Given que la Raspberry Pi está configurada como hotspot  
-  When estudiantes se conectan desde diferentes dispositivos  
-  Then hasta 20 usuarios deben poder acceder de forma concurrente a los contenidos.  
-```
-
-```gherkin
-  Given que los estudiantes están conectados a la red del colegio  
-  When abren un navegador web y acceden a `http://raspberry.local`  
-  Then deben poder visualizar los módulos educativos sin depender de internet externo.  
-```
-
----
-
-### 6. Medición y Seguimiento
-```gherkin
-  Given que existen registros de uso en la base de datos  
-  When un administrador solicita un reporte de hasta 500 registros  
-  Then el sistema debe generarlo en menos de 10 segundos.  
+  Given que el servidor "Aula Digital Rural" está encendido
+  When un estudiante se conecta a la red Wi-Fi "AulaDigital" y abre el navegador
+  Then debe poder acceder a la página de inicio de Kolibri en menos de 15 segundos.
 ```
 ```gherkin
-  Given que la plataforma tiene datos activos  
-  When se cumple una semana de operación  
-  Then el sistema debe generar un respaldo comprimido (.zip) de la base de datos de uso.  
+  Given que no hay conexión a internet externo
+  When el estudiante navega en los módulos de Kolibri o busca en Kiwix
+  Then todas las funcionalidades deben estar disponibles sin errores ni interrupciones.
 ```
----
->>>>>>> origin/master
+
+### 2. Contenidos y Usabilidad
+```gherkin
+  Given que el servidor "Aula Digital Rural" está encendido
+  When un estudiante se conecta a la red Wi-Fi "AulaDigital" y abre el navegador
+  Then debe poder acceder a la página de inicio de Kolibri en menos de 15 segundos.
+```
+```gherkin
+  Given que no hay conexión a internet externo
+  When el estudiante navega en los módulos de Kolibri o busca en Kiwix
+  Then todas las funcionalidades deben estar disponibles sin errores ni interrupciones.
+```
