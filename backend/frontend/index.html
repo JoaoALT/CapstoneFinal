@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Digital - Menú Principal</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #333; }
+        #app-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+        .app-card { background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 20px; text-align: center; }
+        .app-card h2 { margin-top: 0; }
+        .app-card .status { font-size: 0.9em; margin-bottom: 15px; }
+        .status.running { color: #28a745; font-weight: bold; }
+        .status.stopped { color: #dc3545; }
+        .app-card button { cursor: pointer; border: none; padding: 10px 20px; border-radius: 5px; color: white; font-size: 1em; }
+        .btn-launch { background-color: #007bff; }
+        .btn-stop { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <h1>Portal Educativo Aula Digital</h1>
+    <div id="app-container">
+        </div>
+
+    <script>
+        const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/api`;
+        const appContainer = document.getElementById('app-container');
+
+        async function fetchAndUpdateApps() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/applications`);
+                if (!response.ok) throw new Error('Error al obtener las aplicaciones');
+                const apps = await response.json();
+                renderApps(apps);
+            } catch (error) {
+                console.error(error);
+                appContainer.innerHTML = '<p>No se pudo cargar la lista de aplicaciones.</p>';
+            }
+        }
+
+        function renderApps(apps) {
+            appContainer.innerHTML = ''; // Limpiar contenedor
+            apps.forEach(app => {
+                const card = document.createElement('div');
+                card.className = 'app-card';
+                card.innerHTML = `
+                    <h2>${app.name}</h2>
+                    <p class="status ${app.running ? 'running' : 'stopped'}">
+                        Estado: ${app.running ? 'Activa' : 'Detenida'}
+                    </p>
+                    <button class="${app.running ? 'btn-stop' : 'btn-launch'}" data-appid="${app.id}">
+                        ${app.running ? 'Detener' : 'Iniciar'}
+                    </button>
+                    ${app.running ? `<br><br><a href="http://${window.location.hostname}:${app.port}" target="_blank">Abrir App</a>` : ''}
+                `;
+                appContainer.appendChild(card);
+            });
+        }
+
+        appContainer.addEventListener('click', async (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                const button = event.target;
+                const appId = button.dataset.appid;
+                const isRunning = button.classList.contains('btn-stop');
+                const endpoint = isRunning ? 'stop' : 'launch';
+                
+                button.disabled = true;
+                button.textContent = 'Procesando...';
+
+                try {
+                    const response = await fetch(`${API_BASE_URL}/${endpoint}/${appId}`, { method: 'POST' });
+                    const result = await response.json();
+                    console.log(result.message);
+                } catch (error) {
+                    console.error('Error al ejecutar la acción:', error);
+                } finally {
+                    // Esperar un segundo para dar tiempo al proceso a cambiar de estado y luego refrescar
+                    setTimeout(fetchAndUpdateApps, 1000);
+                }
+            }
+        });
+
+        // Carga inicial
+        fetchAndUpdateApps();
+    </script>
+</body>
+</html>
