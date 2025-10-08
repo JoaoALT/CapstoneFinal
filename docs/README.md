@@ -1,5 +1,5 @@
 # Proyecto: Aula Digital Rural
-*Plataforma educativa offline para colegios rurales (Raspberry Pi + Kolibri + Kiwix)*
+*Plataforma educativa offline para colegios rurales (Raspberry Pi + Kiwix)*
 
 ## 📋 Tabla de contenidos
 1. [Roles](#roles)
@@ -33,16 +33,15 @@
 ### Definition of Ready
 Antes de comenzar un sprint / tarea, **todas** las siguientes condiciones deben cumplirse:
 - [ ] Historia o task con **Criterios de aceptación claros, específicos y medibles**.
-- [ ] Canales de **Kolibri** y archivos **ZIM de Kiwix** seleccionados y descargados para el sprint.
+- [ ] Canales de **Kiwix** seleccionados y descargados para el sprint.
 - [ ] Hardware de prueba disponible: **Raspberry Pi 4 (4GB)**, SD Card de alta resistencia y Punto de Acceso Wi-Fi dedicado.
 - [ ] Plan de red local definido (IP estática del servidor, SSID para el AP).
-- [ ] Modelo de datos de **Kolibri** comprendido para la extracción de métricas.
 - [ ] **Script de aprovisionamiento** (Bash/Ansible) preparado para configurar la imagen base de DietPi.
 
 ### Definition of Done
 Una historia / tarea se considera terminada cuando **todas** estas condiciones se cumplen:
 - [ ] Configuraciones aplicadas y mergeadas a la rama principal del repositorio de aprovisionamiento.
-- [ ] Pruebas funcionales de los servicios (Kolibri, Kiwix) superadas.
+- [ ] Pruebas funcionales de los servicios (Librelingo, Kiwix) superadas.
 - [ ] Criterios de aceptación (Given/When/Then) verificados en el hardware de prueba.
 - [ ] **Documentación actualizada** (README, guía de actualización de contenido).
 - [ ] **Imagen maestra (`.img`) generada** y probada con una instalación limpia.
@@ -58,7 +57,7 @@ Una historia / tarea se considera terminada cuando **todas** estas condiciones s
 **Nombre de la solución:** `Aula Digital Rural`
 
 **Resumen:**
-Se creará una **imagen de sistema operativo preconfigurada y endurecida** para una Raspberry Pi, que actuará como un servidor local en el colegio. Esta imagen contendrá la plataforma de aprendizaje **Kolibri**, cargada con contenido curricular, y **Kiwix**, con una copia completa de Wikipedia. La solución generará su propia red Wi-Fi, permitiendo a los estudiantes conectarse y aprender desde cualquier dispositivo con un navegador.
+Se creará una **imagen de sistema operativo preconfigurada y endurecida** para una Raspberry Pi, que actuará como un servidor local en el colegio. Esta imagen contendrá la plataforma de aprendizaje, cargada con contenido curricular, y **Kiwix**, con una copia completa de Wikipedia. La solución generará su propia red Wi-Fi, permitiendo a los estudiantes conectarse y aprender desde cualquier dispositivo con un navegador.
 
 ---
 
@@ -66,11 +65,11 @@ Se creará una **imagen de sistema operativo preconfigurada y endurecida** para 
 - **Hardware:** Una **Raspberry Pi 4** actúa como el servidor central.
 - **Sistema Operativo:** Se utiliza **DietPi** (una distribución ultraligera basada en Debian) como base, configurada en modo **solo lectura (read-only)** para máxima fiabilidad y resistencia a cortes de energía.
 - **Servicios Principales:**
-    - **Kolibri:** Plataforma educativa que gestiona usuarios, contenido, lecciones y seguimiento del progreso. Accesible en `http://192.168.1.10:8080`.
+    - **Servidor Propio**: Sirve como la base de la aplicación educativa.
     - **Kiwix-serve:** Sirve una copia completa de Wikipedia y otros recursos offline. Accesible en `http://192.168.1.10:8100`.
 - **Red:** La Pi se conecta vía Ethernet a un **Punto de Acceso (AP) Wi-Fi dedicado**, que crea una red local (ej. SSID: `AulaDigital`) para los dispositivos de los estudiantes.
-- **Contenido:** Canales educativos de Kolibri (videos, ejercicios interactivos) y archivos ZIM de Kiwix (versiones offline de sitios web).
-- **Mantenimiento:** Las actualizaciones de contenido se realizan mediante "sneakernet" (llevando un USB al colegio) a través de la interfaz de Kolibri y scripts seguros.
+- **Contenido:** Canales educativos (videos, ejercicios interactivos) y archivos ZIM de Kiwix (versiones offline de sitios web).
+- **Mantenimiento:** Las actualizaciones de contenido se realizan mediante "sneakernet" (llevando un USB al colegio) a través de la interfaz y scripts seguros.
 
 ---
 
@@ -108,12 +107,9 @@ Se creará una **imagen de sistema operativo preconfigurada y endurecida** para 
   Como profesor de ciencias, quiero asignar a mis estudiantes una investigación en la Wikipedia offline para que aprendan a buscar información sin riesgo de distracciones.
 
 - **Historia 3**
-  Como coach de Kolibri (profesor), quiero ver qué estudiantes han completado las lecciones de la semana para saber a quién necesito apoyar más.
-
-- **Historia 4**
   Como estudiante de bachillerato, quiero poder conectarme fácilmente desde mi celular a la red del colegio para repasar los temas vistos en clase.
 
-- **Historia 5**
+- **Historia 4**
   Como directivo del colegio, quiero un reporte del uso de la plataforma para mostrar a los padres de familia el progreso en la adopción de tecnología.
 
 ---
@@ -124,11 +120,11 @@ Se creará una **imagen de sistema operativo preconfigurada y endurecida** para 
 ```gherkin
   Given que el servidor "Aula Digital Rural" está encendido
   When un estudiante se conecta a la red Wi-Fi "AulaDigital" y abre el navegador
-  Then debe poder acceder a la página de inicio de Kolibri en menos de 15 segundos.
+  Then debe poder acceder a la página de inicio en menos de 15 segundos.
 ```
 ```gherkin
   Given que no hay conexión a internet externo
-  When el estudiante navega en los módulos de Kolibri o busca en Kiwix
+  When el estudiante navega en los módulos de en Kiwix
   Then todas las funcionalidades deben estar disponibles sin errores ni interrupciones.
 ```
 
@@ -136,10 +132,10 @@ Se creará una **imagen de sistema operativo preconfigurada y endurecida** para 
 ```gherkin
   Given que el servidor "Aula Digital Rural" está encendido
   When un estudiante se conecta a la red Wi-Fi "AulaDigital" y abre el navegador
-  Then debe poder acceder a la página de inicio de Kolibri en menos de 15 segundos.
+  Then debe poder acceder a la página de inicio.
 ```
 ```gherkin
   Given que no hay conexión a internet externo
-  When el estudiante navega en los módulos de Kolibri o busca en Kiwix
+  When el estudiante navega en los módulos en Kiwix.
   Then todas las funcionalidades deben estar disponibles sin errores ni interrupciones.
 ```
