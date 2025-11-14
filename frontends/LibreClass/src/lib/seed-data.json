@@ -1,0 +1,426 @@
+{
+  "grades": [
+    { "id": "primero", "name": "Primero", "code": "grade1", "displayOrder": 1, "isActive": true },
+    { "id": "segundo", "name": "Segundo", "code": "grade2", "displayOrder": 2, "isActive": true },
+    { "id": "tercero", "name": "Tercero", "code": "grade3", "displayOrder": 3, "isActive": true },
+    { "id": "cuarto", "name": "Cuarto", "code": "grade4", "displayOrder": 4, "isActive": true },
+    { "id": "quinto", "name": "Quinto", "code": "grade5", "displayOrder": 5, "isActive": true },
+    { "id": "sexto", "name": "Sexto", "code": "grade6", "displayOrder": 6, "isActive": true },
+    { "id": "septimo", "name": "Séptimo", "code": "grade7", "displayOrder": 7, "isActive": true },
+    { "id": "octavo", "name": "Octavo", "code": "grade8", "displayOrder": 8, "isActive": true },
+    { "id": "noveno", "name": "Noveno", "code": "grade9", "displayOrder": 9, "isActive": true },
+    { "id": "decimo", "name": "Décimo", "code": "grade10", "displayOrder": 10, "isActive": true },
+    { "id": "undecimo", "name": "Undécimo", "code": "grade11", "displayOrder": 11, "isActive": true }
+  ],
+  "subjects": {
+    "primero": [
+      { "id": "matematicas-1", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+      { "id": "lengua-1", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+      { "id": "ciencias-naturales-1", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+      { "id": "ciencias-sociales-1", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+      { "id": "ingles-1", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+      { "id": "educacion-fisica-1", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+      { "id": "artes-1", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "segundo": [
+        { "id": "matematicas-2", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-2", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-2", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-2", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-2", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-2", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-2", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "tercero": [
+        { "id": "matematicas-3", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-3", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-3", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-3", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-3", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-3", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-3", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "cuarto": [
+        { "id": "matematicas-4", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-4", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-4", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-4", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-4", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-4", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-4", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "quinto": [
+        { "id": "matematicas-5", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-5", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-5", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-5", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-5", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-5", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-5", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "sexto": [
+        { "id": "matematicas-6", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-6", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-6", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-6", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-6", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-6", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-6", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "septimo": [
+        { "id": "matematicas-7", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-7", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-7", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-7", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-7", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-7", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-7", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "octavo": [
+        { "id": "matematicas-8", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-8", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-8", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-8", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-8", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-8", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-8", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "noveno": [
+        { "id": "matematicas-9", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-9", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-9", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-9", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-9", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-9", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-9", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "decimo": [
+        { "id": "matematicas-10", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-10", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-10", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-10", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-10", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-10", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-10", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ],
+    "undecimo": [
+        { "id": "matematicas-11", "name": "Matemáticas", "code": "math", "icon": "Calculator", "displayOrder": 1, "isActive": true },
+        { "id": "lengua-11", "name": "Lengua y Literatura", "code": "language", "icon": "BookOpen", "displayOrder": 2, "isActive": true },
+        { "id": "ciencias-naturales-11", "name": "Ciencias Naturales", "code": "science", "icon": "FlaskConical", "displayOrder": 3, "isActive": true },
+        { "id": "ciencias-sociales-11", "name": "Ciencias Sociales", "code": "socials", "icon": "Landmark", "displayOrder": 4, "isActive": true },
+        { "id": "ingles-11", "name": "Inglés", "code": "english", "icon": "Globe", "displayOrder": 5, "isActive": true },
+        { "id": "educacion-fisica-11", "name": "Educación Física", "code": "pe", "icon": "Bike", "displayOrder": 6, "isActive": true },
+        { "id": "artes-11", "name": "Artes", "code": "arts", "icon": "Palette", "displayOrder": 7, "isActive": true }
+    ]
+  },
+  "materials": {
+    "primero_matematicas-1": [
+      { "id": "mat-1-1", "title": "Introducción a los Números", "description": "Un divertido video para aprender a contar.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["conteo", "números"], "displayOrder": 1, "isActive": true },
+      { "id": "mat-1-2", "title": "Formas y Figuras", "description": "Una presentación interactiva de las formas básicas.", "fileType": "pptx", "filePath": "/sample-content/sample.pptx", "tags": ["geometría", "formas"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_lengua-1": [
+      { "id": "len-1-1", "title": "El Abecedario", "description": "Documento con el abecedario y ejemplos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["letras", "lectura"], "displayOrder": 1, "isActive": true },
+      { "id": "len-1-2", "title": "Mis primeras palabras", "description": "Video para aprender palabras comunes.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["vocabulario", "video"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_ciencias-naturales-1": [
+      { "id": "cie-1-1", "title": "Los Animales de la Granja", "description": "Video con los sonidos de los animales.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["animales", "sonidos"], "displayOrder": 1, "isActive": true },
+      { "id": "cie-1-2", "title": "El Ciclo del Agua", "description": "PDF explicativo sobre el ciclo del agua.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["agua", "naturaleza"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_ciencias-sociales-1": [
+      { "id": "soc-1-1", "title": "Mi Familia", "description": "Actividad para dibujar a tu familia.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["familia", "comunidad"], "displayOrder": 1, "isActive": true },
+      { "id": "soc-1-2", "title": "Los Días de la Semana", "description": "Video para aprender los días de la semana.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["tiempo", "calendario"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_ingles-1": [
+        { "id": "ing-1-1", "title": "Colors", "description": "Video to learn the colors in English.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["colors", "english"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-1-2", "title": "Numbers 1-10", "description": "PDF with numbers from 1 to 10.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["numbers", "english"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_educacion-fisica-1": [
+        { "id": "ef-1-1", "title": "A Mover el Cuerpo", "description": "Video con ejercicios divertidos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["ejercicio", "salud"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-1-2", "title": "Juegos Tradicionales", "description": "PDF con reglas de juegos populares.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["juegos", "diversión"], "displayOrder": 2, "isActive": true }
+    ],
+    "primero_artes-1": [
+        { "id": "art-1-1", "title": "Pintando con los Dedos", "description": "Guía para crear arte con tus manos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["pintura", "creatividad"], "displayOrder": 1, "isActive": true },
+        { "id": "art-1-2", "title": "Canciones Infantiles", "description": "Video con canciones para cantar y bailar.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["música", "canto"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_matematicas-2": [
+        { "id": "mat-2-1", "title": "Sumas y Restas", "description": "Un PDF con ejercicios de sumas y restas.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["sumas", "restas"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-2-2", "title": "Contando de 10 en 10", "description": "Un video para aprender a contar de 10 en 10.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["conteo", "números"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_lengua-2": [
+        { "id": "len-2-1", "title": "Lectura de Cuentos Cortos", "description": "PDF con cuentos cortos para practicar lectura.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["lectura", "cuentos"], "displayOrder": 1, "isActive": true },
+        { "id": "len-2-2", "title": "Rimas y Canciones", "description": "Video con rimas y canciones infantiles.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["rimas", "música"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_ciencias-naturales-2": [
+        { "id": "cie-2-1", "title": "Las Plantas", "description": "Video sobre las partes de una planta.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["plantas", "naturaleza"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-2-2", "title": "Animales Salvajes vs. Domésticos", "description": "PDF para diferenciar animales salvajes y domésticos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["animales", "clasificación"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_ciencias-sociales-2": [
+        { "id": "soc-2-1", "title": "Mi Comunidad", "description": "PDF sobre los lugares importantes en la comunidad.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["comunidad", "mapas"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-2-2", "title": "Las Profesiones", "description": "Video sobre diferentes trabajos y profesiones.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["profesiones", "sociedad"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_ingles-2": [
+        { "id": "ing-2-1", "title": "Animals", "description": "Video to learn animal names in English.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["animals", "english"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-2-2", "title": "My Family", "description": "PDF with vocabulary about the family.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["family", "english"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_educacion-fisica-2": [
+        { "id": "ef-2-1", "title": "Yoga para Niños", "description": "Video con posturas de yoga sencillas.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["yoga", "relajación"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-2-2", "title": "Carreras y Saltos", "description": "PDF con ideas de juegos de carreras y saltos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["atletismo", "juegos"], "displayOrder": 2, "isActive": true }
+    ],
+    "segundo_artes-2": [
+        { "id": "art-2-1", "title": "Dibujando Animales", "description": "Video tutorial para dibujar animales simples.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["dibujo", "creatividad"], "displayOrder": 1, "isActive": true },
+        { "id": "art-2-2", "title": "Collage de Revistas", "description": "PDF con instrucciones para hacer un collage.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["collage", "reciclaje"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_matematicas-3": [
+        { "id": "mat-3-1", "title": "Tablas de Multiplicar", "description": "Video interactivo para aprender a multiplicar.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["multiplicación", "tablas"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-3-2", "title": "Problemas Matemáticos", "description": "PDF con problemas sencillos para resolver.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["problemas", "lógica"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_lengua-3": [
+        { "id": "len-3-1", "title": "Tipos de Oraciones", "description": "PDF que explica las oraciones declarativas, interrogativas y exclamativas.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["gramática", "oraciones"], "displayOrder": 1, "isActive": true },
+        { "id": "len-3-2", "title": "Escribiendo un Cuento", "description": "Video guía para escribir tu primer cuento.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["escritura", "creatividad"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_ciencias-naturales-3": [
+        { "id": "cie-3-1", "title": "El Sistema Solar", "description": "Video animado sobre los planetas.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["espacio", "planetas"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-3-2", "title": "Los Ecosistemas", "description": "PDF que describe diferentes ecosistemas.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["ecosistemas", "biología"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_ciencias-sociales-3": [
+        { "id": "soc-3-1", "title": "Mapas y Símbolos", "description": "PDF para aprender a leer mapas.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["cartografía", "geografía"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-3-2", "title": "Culturas del Mundo", "description": "Video mostrando diferentes culturas y tradiciones.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["cultura", "diversidad"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_ingles-3": [
+        { "id": "ing-3-1", "title": "Days of the Week", "description": "Video to learn the days of the week.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["vocabulary", "time"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-3-2", "title": "Food and Drinks", "description": "PDF with vocabulary about food.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["food", "english"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_educacion-fisica-3": [
+        { "id": "ef-3-1", "title": "Deportes en Equipo", "description": "Video sobre la importancia del trabajo en equipo.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["deportes", "equipo"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-3-2", "title": "Gimnasia Básica", "description": "PDF con ejercicios de gimnasia.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["gimnasia", "flexibilidad"], "displayOrder": 2, "isActive": true }
+    ],
+    "tercero_artes-3": [
+        { "id": "art-3-1", "title": "Teatro de Sombras", "description": "Guía en PDF para crear tu propio teatro de sombras.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["teatro", "creatividad"], "displayOrder": 1, "isActive": true },
+        { "id": "art-3-2", "title": "Creando Instrumentos Musicales", "description": "Video para hacer instrumentos con material reciclado.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["música", "reciclaje"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_matematicas-4": [
+        { "id": "mat-4-1", "title": "Fracciones", "description": "Video explicando qué son las fracciones.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["fracciones", "matemáticas"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-4-2", "title": "Ejercicios de División", "description": "PDF con divisiones para practicar.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["división", "ejercicios"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_lengua-4": [
+        { "id": "len-4-1", "title": "El Sujeto y el Predicado", "description": "PDF con la estructura de la oración.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["gramática", "sintaxis"], "displayOrder": 1, "isActive": true },
+        { "id": "len-4-2", "title": "Comprensión Lectora", "description": "Video con técnicas para mejorar la comprensión lectora.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["lectura", "comprensión"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_ciencias-naturales-4": [
+        { "id": "cie-4-1", "title": "El Cuerpo Humano", "description": "Video sobre los sistemas del cuerpo humano.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["anatomía", "biología"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-4-2", "title": "La Cadena Alimenticia", "description": "PDF interactivo sobre la cadena alimenticia.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["ecología", "animales"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_ciencias-sociales-4": [
+        { "id": "soc-4-1", "title": "La Historia de mi País", "description": "PDF con un resumen de la historia nacional.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["historia", "país"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-4-2", "title": "Geografía de mi Continente", "description": "Video con un viaje por el continente.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["geografía", "continentes"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_ingles-4": [
+        { "id": "ing-4-1", "title": "Present Tense", "description": "Video explaining the present simple tense.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "verbs"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-4-2", "title": "Daily Routines", "description": "PDF with vocabulary about daily routines.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["vocabulary", "routines"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_educacion-fisica-4": [
+        { "id": "ef-4-1", "title": "Reglas del Fútbol", "description": "Video explicando las reglas básicas del fútbol.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["fútbol", "deportes"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-4-2", "title": "Circuito de Entrenamiento", "description": "PDF con un circuito de ejercicios.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["entrenamiento", "salud"], "displayOrder": 2, "isActive": true }
+    ],
+    "cuarto_artes-4": [
+        { "id": "art-4-1", "title": "Pintura con Acuarelas", "description": "Video tutorial de técnicas básicas de acuarela.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["pintura", "acuarela"], "displayOrder": 1, "isActive": true },
+        { "id": "art-4-2", "title": "Modelado en Arcilla", "description": "PDF con proyectos sencillos de modelado.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["escultura", "arcilla"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_matematicas-5": [
+        { "id": "mat-5-1", "title": "Números Decimales", "description": "Video sobre operaciones con decimales.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["decimales", "operaciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-5-2", "title": "Área y Perímetro", "description": "PDF para calcular área y perímetro de figuras.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["geometría", "medidas"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_lengua-5": [
+        { "id": "len-5-1", "title": "El Párrafo", "description": "PDF sobre cómo estructurar un párrafo.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["escritura", "redacción"], "displayOrder": 1, "isActive": true },
+        { "id": "len-5-2", "title": "Análisis de Poesía", "description": "Video analizando un poema famoso.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["poesía", "literatura"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_ciencias-naturales-5": [
+        { "id": "cie-5-1", "title": "La Célula", "description": "Video que explica las partes de la célula.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["célula", "biología"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-5-2", "title": "Experimentos Caseros", "description": "PDF con experimentos científicos para hacer en casa.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["experimentos", "ciencia"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_ciencias-sociales-5": [
+        { "id": "soc-5-1", "title": "La Revolución Industrial", "description": "Video sobre los cambios en la Revolución Industrial.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "industria"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-5-2", "title": "Gobierno y Democracia", "description": "PDF explicando cómo funciona un gobierno democrático.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["democracia", "política"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_ingles-5": [
+        { "id": "ing-5-1", "title": "Past Tense", "description": "Video explaining the simple past tense.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "verbs"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-5-2", "title": "Describing People", "description": "PDF with adjectives to describe people.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["vocabulary", "adjectives"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_educacion-fisica-5": [
+        { "id": "ef-5-1", "title": "Baloncesto para Principiantes", "description": "Video con los fundamentos del baloncesto.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["baloncesto", "deportes"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-5-2", "title": "Nutrición y Deporte", "description": "PDF sobre la importancia de una buena alimentación.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["nutrición", "salud"], "displayOrder": 2, "isActive": true }
+    ],
+    "quinto_artes-5": [
+        { "id": "art-5-1", "title": "Historia del Arte", "description": "Video resumen de los principales movimientos artísticos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "arte"], "displayOrder": 1, "isActive": true },
+        { "id": "art-5-2", "title": "Fotografía Básica", "description": "PDF con consejos para tomar mejores fotos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["fotografía", "técnica"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_matematicas-6": [
+        { "id": "mat-6-1", "title": "Álgebra Básica", "description": "Introducción a las variables y ecuaciones.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["álgebra", "ecuaciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-6-2", "title": "Porcentajes", "description": "PDF con ejercicios de porcentajes.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["porcentajes", "cálculo"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_lengua-6": [
+        { "id": "len-6-1", "title": "Tipos de Textos", "description": "Diferenciar entre textos narrativos, descriptivos, etc.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["lectura", "redacción"], "displayOrder": 1, "isActive": true },
+        { "id": "len-6-2", "title": "Figuras Literarias", "description": "Video explicando metáforas, símiles y más.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["literatura", "poesía"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_ciencias-naturales-6": [
+        { "id": "cie-6-1", "title": "Energías Renovables", "description": "Video sobre la importancia de las energías limpias.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["energía", "ecología"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-6-2", "title": "Genética Básica", "description": "PDF sobre ADN y herencia.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["genética", "biología"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_ciencias-sociales-6": [
+        { "id": "soc-6-1", "title": "Antiguas Civilizaciones", "description": "Viaje por Egipto, Roma y Grecia.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "antigüedad"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-6-2", "title": "Derechos Humanos", "description": "PDF sobre la declaración universal de los DDHH.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["derechos", "sociedad"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_ingles-6": [
+        { "id": "ing-6-1", "title": "Future Tense (Will/Going to)", "description": "Video on how to talk about the future.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "future"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-6-2", "title": "Giving Directions", "description": "PDF with vocabulary for giving directions.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["vocabulary", "city"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_educacion-fisica-6": [
+        { "id": "ef-6-1", "title": "Voleibol: Reglas y Técnicas", "description": "Video con los fundamentos del voleibol.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["voleibol", "deportes"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-6-2", "title": "Calentamiento y Estiramiento", "description": "PDF con rutinas de calentamiento.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["salud", "ejercicio"], "displayOrder": 2, "isActive": true }
+    ],
+    "sexto_artes-6": [
+        { "id": "art-6-1", "title": "Introducción a la Música Clásica", "description": "Video con obras de compositores famosos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["música", "historia"], "displayOrder": 1, "isActive": true },
+        { "id": "art-6-2", "title": "Técnicas de Dibujo a Lápiz", "description": "PDF con ejercicios para mejorar el trazo.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["dibujo", "técnica"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_matematicas-7": [
+        { "id": "mat-7-1", "title": "Ecuaciones de Primer Grado", "description": "Video resolviendo ecuaciones paso a paso.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["álgebra", "ecuaciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-7-2", "title": "Estadística y Probabilidad", "description": "PDF con conceptos básicos de estadística.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["estadística", "datos"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_lengua-7": [
+        { "id": "len-7-1", "title": "Análisis Sintáctico", "description": "PDF con ejercicios de análisis de oraciones.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["gramática", "sintaxis"], "displayOrder": 1, "isActive": true },
+        { "id": "len-7-2", "title": "El Ensayo", "description": "Video sobre cómo escribir un ensayo argumentativo.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["escritura", "ensayo"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_ciencias-naturales-7": [
+        { "id": "cie-7-1", "title": "Química Básica: La Tabla Periódica", "description": "Video interactivo sobre los elementos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["química", "elementos"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-7-2", "title": "Física: Movimiento y Fuerza", "description": "PDF con las leyes de Newton.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["física", "newton"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_ciencias-sociales-7": [
+        { "id": "soc-7-1", "title": "La Edad Media", "description": "Video sobre castillos, caballeros y feudos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "edad media"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-7-2", "title": "Sistemas Económicos", "description": "PDF sobre capitalismo, socialismo y otros.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["economía", "sociedad"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_ingles-7": [
+        { "id": "ing-7-1", "title": "Present Perfect", "description": "Video lesson about Present Perfect tense.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "verbs"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-7-2", "title": "Reading Comprehension", "description": "PDF with short texts and questions.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["reading", "comprehension"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_educacion-fisica-7": [
+        { "id": "ef-7-1", "title": "Atletismo", "description": "Video sobre las diferentes disciplinas del atletismo.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["atletismo", "deportes"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-7-2", "title": "Primeros Auxilios Básicos", "description": "PDF con guía de primeros auxilios.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["salud", "seguridad"], "displayOrder": 2, "isActive": true }
+    ],
+    "septimo_artes-7": [
+        { "id": "art-7-1", "title": "Perspectiva en el Dibujo", "description": "Video tutorial sobre cómo dibujar con perspectiva.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["dibujo", "perspectiva"], "displayOrder": 1, "isActive": true },
+        { "id": "art-7-2", "title": "Grandes Obras de Arte", "description": "Presentación (PPTX) analizando pinturas famosas.", "fileType": "pptx", "filePath": "/sample-content/sample.pptx", "tags": ["historia del arte", "pintura"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_matematicas-8": [
+        { "id": "mat-8-1", "title": "Sistemas de Ecuaciones", "description": "Video con métodos de resolución (sustitución, igualación).", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["álgebra", "ecuaciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-8-2", "title": "Teorema de Pitágoras", "description": "PDF con la demostración y ejercicios.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["geometría", "pitágoras"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_lengua-8": [
+        { "id": "len-8-1", "title": "Literatura Latinoamericana", "description": "PDF con un panorama de autores importantes.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["literatura", "latinoamérica"], "displayOrder": 1, "isActive": true },
+        { "id": "len-8-2", "title": "Debate y Argumentación", "description": "Video con técnicas para un buen debate.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["oralidad", "debate"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_ciencias-naturales-8": [
+        { "id": "cie-8-1", "title": "Reacciones Químicas", "description": "Video con ejemplos de reacciones químicas.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["química", "reacciones"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-8-2", "title": "Ondas y Sonido", "description": "PDF sobre las propiedades de las ondas y el sonido.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["física", "sonido"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_ciencias-sociales-8": [
+        { "id": "soc-8-1", "title": "Renacimiento y Humanismo", "description": "Video sobre este importante período histórico.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "renacimiento"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-8-2", "title": "Globalización", "description": "PDF que explica el concepto de globalización.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["economía", "globalización"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_ingles-8": [
+        { "id": "ing-8-1", "title": "Past Perfect", "description": "Video lesson about Past Perfect tense.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "verbs"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-8-2", "title": "Writing an Email", "description": "PDF with tips for writing formal and informal emails.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["writing", "email"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_educacion-fisica-8": [
+        { "id": "ef-8-1", "title": "Anatomía del Movimiento", "description": "Video sobre músculos y huesos implicados en el deporte.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["anatomía", "salud"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-8-2", "title": "Plan de Entrenamiento Personal", "description": "PDF para crear tu propio plan de ejercicios.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["entrenamiento", "fitness"], "displayOrder": 2, "isActive": true }
+    ],
+    "octavo_artes-8": [
+        { "id": "art-8-1", "title": "Stop Motion", "description": "Video tutorial para crear animaciones en stop motion.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["animación", "creatividad"], "displayOrder": 1, "isActive": true },
+        { "id": "art-8-2", "title": "Análisis de Películas", "description": "PDF sobre cómo analizar el lenguaje cinematográfico.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["cine", "análisis"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_matematicas-9": [
+        { "id": "mat-9-1", "title": "Funciones Cuadráticas", "description": "Video sobre parábolas y sus propiedades.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["álgebra", "funciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-9-2", "title": "Trigonometría Básica", "description": "PDF con seno, coseno y tangente.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["trigonometría", "geometría"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_lengua-9": [
+        { "id": "len-9-1", "title": "El Boom Latinoamericano", "description": "Video sobre García Márquez, Vargas Llosa, etc.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["literatura", "boom"], "displayOrder": 1, "isActive": true },
+        { "id": "len-9-2", "title": "Redacción de Textos Académicos", "description": "PDF con normas y consejos para escribir textos académicos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["escritura", "academia"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_ciencias-naturales-9": [
+        { "id": "cie-9-1", "title": "Evolución y Selección Natural", "description": "Video sobre la teoría de Darwin.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["biología", "evolución"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-9-2", "title": "Leyes de la Termodinámica", "description": "PDF explicando las leyes de la termodinámica.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["física", "termodinámica"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_ciencias-sociales-9": [
+        { "id": "soc-9-1", "title": "Revolución Francesa", "description": "Video sobre las causas y consecuencias.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "revolución"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-9-2", "title": "Geopolítica Mundial", "description": "PDF sobre las relaciones de poder en el mundo.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["geopolítica", "actualidad"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_ingles-9": [
+        { "id": "ing-9-1", "title": "Conditionals", "description": "Video explaining zero, first, and second conditionals.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "conditionals"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-9-2", "title": "Idioms and Expressions", "description": "PDF with common English idioms.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["vocabulary", "idioms"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_educacion-fisica-9": [
+        { "id": "ef-9-1", "title": "Fisiología del Ejercicio", "description": "Video sobre la respuesta del cuerpo al ejercicio.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["fisiología", "salud"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-9-2", "title": "Deportes Alternativos", "description": "PDF con reglas de deportes menos comunes.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["deportes", "curiosidades"], "displayOrder": 2, "isActive": true }
+    ],
+    "noveno_artes-9": [
+        { "id": "art-9-1", "title": "Edición de Video Básica", "description": "Video tutorial de un software de edición gratuito.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["video", "edición"], "displayOrder": 1, "isActive": true },
+        { "id": "art-9-2", "title": "Land Art", "description": "PDF sobre el movimiento artístico Land Art.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["arte", "naturaleza"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_matematicas-10": [
+        { "id": "mat-10-1", "title": "Funciones Trigonométricas", "description": "Video sobre el círculo trigonométrico.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["trigonometría", "funciones"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-10-2", "title": "Logaritmos", "description": "PDF con propiedades y ejercicios de logaritmos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["logaritmos", "álgebra"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_lengua-10": [
+        { "id": "len-10-1", "title": "Literatura del Siglo XX", "description": "Video sobre las vanguardias literarias.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["literatura", "vanguardias"], "displayOrder": 1, "isActive": true },
+        { "id": "len-10-2", "title": "Oratoria y Discurso Público", "description": "PDF con técnicas para hablar en público.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["oralidad", "discurso"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_ciencias-naturales-10": [
+        { "id": "cie-10-1", "title": "Química Orgánica", "description": "Video sobre cadenas de carbono e hidrocarburos.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["química", "orgánica"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-10-2", "title": "Electromagnetismo", "description": "PDF con las bases del electromagnetismo.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["física", "electricidad"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_ciencias-sociales-10": [
+        { "id": "soc-10-1", "title": "La Guerra Fría", "description": "Video sobre el conflicto entre EEUU y la URSS.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["historia", "guerra fría"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-10-2", "title": "Filosofía para Principiantes", "description": "PDF con una introducción a los grandes filósofos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["filosofía", "pensamiento"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_ingles-10": [
+        { "id": "ing-10-1", "title": "Reported Speech", "description": "Video lesson on how to use reported speech.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "speech"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-10-2", "title": "Formal and Informal Language", "description": "PDF explaining the differences.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["writing", "style"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_educacion-fisica-10": [
+        { "id": "ef-10-1", "title": "Biomecánica Deportiva", "description": "Video sobre la física del movimiento humano.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["ciencia", "deporte"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-10-2", "title": "Gestión de Lesiones", "description": "PDF sobre cómo prevenir y tratar lesiones comunes.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["salud", "lesiones"], "displayOrder": 2, "isActive": true }
+    ],
+    "decimo_artes-10": [
+        { "id": "art-10-1", "title": "Arte Contemporáneo", "description": "Video sobre los movimientos artísticos actuales.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["arte", "contemporáneo"], "displayOrder": 1, "isActive": true },
+        { "id": "art-10-2", "title": "Creación de un Cortometraje", "description": "PDF con una guía paso a paso.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["cine", "producción"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_matematicas-11": [
+        { "id": "mat-11-1", "title": "Cálculo: Límites", "description": "Video introductorio al concepto de límite.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["cálculo", "límites"], "displayOrder": 1, "isActive": true },
+        { "id": "mat-11-2", "title": "Matrices y Determinantes", "description": "PDF con operaciones básicas de matrices.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["álgebra", "matrices"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_lengua-11": [
+        { "id": "len-11-1", "title": "Preparación para Exámenes de Admisión", "description": "Video con consejos de comprensión lectora.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["examen", "lectura"], "displayOrder": 1, "isActive": true },
+        { "id": "len-11-2", "title": "Análisis Crítico del Discurso", "description": "PDF sobre cómo analizar textos mediáticos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["análisis", "medios"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_ciencias-naturales-11": [
+        { "id": "cie-11-1", "title": "Química del Carbono", "description": "Video sobre la importancia del carbono en la vida.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["química", "vida"], "displayOrder": 1, "isActive": true },
+        { "id": "cie-11-2", "title": "Física Moderna", "description": "PDF introductorio a la relatividad y cuántica.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["física", "moderna"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_ciencias-sociales-11": [
+        { "id": "soc-11-1", "title": "Economía Global", "description": "Video sobre mercados internacionales y finanzas.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["economía", "finanzas"], "displayOrder": 1, "isActive": true },
+        { "id": "soc-11-2", "title": "Introducción a la Ciencia Política", "description": "PDF sobre teorías y sistemas políticos.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["política", "teoría"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_ingles-11": [
+        { "id": "ing-11-1", "title": "Advanced Conditionals", "description": "Video explaining third and mixed conditionals.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["grammar", "conditionals"], "displayOrder": 1, "isActive": true },
+        { "id": "ing-11-2", "title": "CV and Cover Letter Writing", "description": "PDF with tips for job applications.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["writing", "career"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_educacion-fisica-11": [
+        { "id": "ef-11-1", "title": "Psicología Deportiva", "description": "Video sobre la mentalidad del atleta.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["psicología", "deporte"], "displayOrder": 1, "isActive": true },
+        { "id": "ef-11-2", "title": "Métodos de Entrenamiento Avanzados", "description": "PDF sobre HIIT, pliometría, etc.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["entrenamiento", "avanzado"], "displayOrder": 2, "isActive": true }
+    ],
+    "undecimo_artes-11": [
+        { "id": "art-11-1", "title": "Dirección de Fotografía", "description": "Video sobre iluminación y composición en cine.", "fileType": "video", "filePath": "https://www.w3schools.com/html/mov_bbb.mp4", "tags": ["cine", "fotografía"], "displayOrder": 1, "isActive": true },
+        { "id": "art-11-2", "title": "Portafolio Artístico", "description": "PDF con consejos para armar un portafolio profesional.", "fileType": "pdf", "filePath": "/sample-content/sample.pdf", "tags": ["profesional", "arte"], "displayOrder": 2, "isActive": true }
+    ]
+  }
+}

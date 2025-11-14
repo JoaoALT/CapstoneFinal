@@ -1,0 +1,51 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    // Public course data is readable by any authenticated user
+    match /courses/{courseId} {
+      allow read: if isAuthenticated();
+      allow write: if false; // Assume admins write content
+
+      match /units/{unitId} {
+        allow read: if isAuthenticated();
+        allow write: if false;
+
+        match /lessons/{lessonId} {
+          allow read: if isAuthenticated();
+          allow write: if false;
+
+          match /exercises/{exerciseId} {
+            allow read: if isAuthenticated();
+            allow write: if false;
+          }
+        }
+      }
+    }
+
+    // Users can read and write their own data
+    match /users/{userId} {
+      allow read, update: if isAuthenticated() && isOwner(userId);
+      allow create: if isAuthenticated();
+    }
+
+    // Users can manage their own lesson attempts and progress
+    match /users/{userId}/lessonAttempts/{attemptId} {
+      allow read, write: if isAuthenticated() && isOwner(userId);
+    }
+
+    match /users/{userId}/progress/{progressId} {
+      allow read, write: if isAuthenticated() && isOwner(userId);
+    }
+  }
+}
