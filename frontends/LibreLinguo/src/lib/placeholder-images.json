@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "login-hero",
+      "description": "Students learning in a classroom",
+      "imageUrl": "https://images.unsplash.com/photo-1610500796385-3ffc1ae2f046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50cyUyMGxlYXJuaW5nfGVufDB8fHx8MTc2MzA4MTEzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students learning"
+    },
+    {
+      "id": "exercise-greetings",
+      "description": "Two people shaking hands",
+      "imageUrl": "https://images.unsplash.com/photo-1651372381086-9861c9c81db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW9wbGUlMjBoYW5kc2hha2V8ZW58MHx8fHwxNzYzMTUzMzAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people handshake"
+    },
+    {
+      "id": "exercise-family",
+      "description": "A happy family",
+      "imageUrl": "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NjMxMTY3NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy family"
+    },
+    {
+      "id": "exercise-food",
+      "description": "A table with various foods",
+      "imageUrl": "https://images.unsplash.com/photo-1570352412018-d4ad8dd88b75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZWxpY2lvdXMlMjBmb29kfGVufDB8fHx8MTc2MzA4MzY3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "delicious food"
+    },
+    {
+      "id": "exercise-animals",
+      "description": "A cute dog",
+      "imageUrl": "https://images.unsplash.com/photo-1582456891925-a53965520520?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZG9nfGVufDB8fHx8MTc2MzExMDMwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cute dog"
+    },
+    {
+      "id": "exercise-travel",
+      "description": "An airplane in the sky",
+      "imageUrl": "https://images.unsplash.com/photo-1671971208358-8e6155b18f1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaXJwbGFuZSUyMHNreXxlbnwwfHx8fDE3NjMxMDYyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "airplane sky"
+    }
+  ]
+}

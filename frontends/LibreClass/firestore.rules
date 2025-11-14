@@ -1,0 +1,41 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isAdmin() {
+      // Check for admin role in the user's document.
+      // For production, using custom claims is more secure and efficient.
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Grades, Subjects, and Materials are publicly readable by any authenticated user
+    // but only writable by admins.
+    match /grades/{gradeId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && isAdmin();
+
+      match /subjects/{subjectId} {
+        allow read: if request.auth != null;
+        allow write: if request.auth != null && isAdmin();
+
+        match /materials/{materialId} {
+          allow read: if request.auth != null;
+          allow write: if request.auth != null && isAdmin();
+        }
+      }
+    }
+
+    // User profile data can be read and written only by the owner.
+    match /users/{userId} {
+      allow read, update: if request.auth != null && request.auth.uid == userId;
+      // Disallow creation/deletion by clients to be handled server-side on sign-up.
+      allow create, delete: if false; 
+    }
+
+    // Users can manage their own material status (favorites, progress).
+    match /users/{userId}/materialsStatus/{materialId} {
+       allow read, write, delete: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
