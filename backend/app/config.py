@@ -7,6 +7,7 @@ APPLICATIONS = {
         "port": 3000,
         "command": ["npm", "run", "dev"],
         "directory": "frontends/LibreLinguo",
+        "description": "Plataforma de idiomas y lecciones interactivas.",
     },
     "librexam": {
         "id": "librexam",
@@ -14,6 +15,7 @@ APPLICATIONS = {
         "port": 3001,
         "command": ["npm", "run", "dev"],
         "directory": "frontends/LibreExam",
+        "description": "Exámenes y evaluaciones en línea.",
     },
     "libreclass": {
         "id": "libreclass",
@@ -21,6 +23,7 @@ APPLICATIONS = {
         "port": 3002,
         "command": ["npm", "run", "dev"],
         "directory": "frontends/LibreClass",
+        "description": "Gestión de grados, materias y materiales educativos.",
     },
     "kiwix": {
         "id": "kiwix",
@@ -28,5 +31,14 @@ APPLICATIONS = {
         "port": 3003,
         "command": ["npm", "run", "dev"],
         "directory": "frontends/Kiwix",
+        "description": "Enciclopedia y recursos offline.",
+    },
+    "librecordings": {
+        "id": "librecordings",
+        "name": "LibreRecordings",
+        "port": 3004,
+        "command": ["npm", "run", "dev"],
+        "directory": "frontends/LibreRecordings",
+        "description": "Galería y gestión de grabaciones y videos educativos.",
     },
 }
