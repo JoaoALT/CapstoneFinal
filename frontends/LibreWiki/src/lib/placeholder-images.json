@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "mathematics-1",
+      "description": "An abstract representation of mathematics",
+      "imageUrl": "https://images.unsplash.com/photo-1747654804425-493614b5c3e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBtYXRoZW1hdGljc3xlbnwwfHx8fDE3NjMwODQ1MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract mathematics"
+    },
+    {
+      "id": "history-1",
+      "description": "Ancient ruins representing history",
+      "imageUrl": "https://images.unsplash.com/photo-1610025074349-692706795cc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmNpZW50JTIwcnVpbnN8ZW58MHx8fHwxNzYzMTA4MzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient ruins"
+    },
+    {
+      "id": "science-1",
+      "description": "A chemistry set representing science",
+      "imageUrl": "https://images.unsplash.com/photo-1735352312517-d3c50bbce1f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGVtaXN0cnklMjBzZXR8ZW58MHx8fHwxNzYzMTU5NjU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chemistry set"
+    },
+    {
+      "id": "literature-1",
+      "description": "A stack of old books representing literature",
+      "imageUrl": "https://images.unsplash.com/photo-1613324766451-2d03b2ea8190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbGQlMjBib29rc3xlbnwwfHx8fDE3NjMwNzA3NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old books"
+    },
+    {
+      "id": "geography-1",
+      "description": "A world map",
+      "imageUrl": "https://images.unsplash.com/photo-1706823871410-ed8b01faef7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b3JsZCUyMG1hcHxlbnwwfHx8fDE3NjMwODY1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "world map"
+    },
+    {
+      "id": "art-1",
+      "description": "Paint brushes and colors",
+      "imageUrl": "https://images.unsplash.com/photo-1517697471339-4aa32003c11a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYWludCUyMGJydXNoZXN8ZW58MHx8fHwxNzYzMDQwNjk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paint brushes"
+    },
+    {
+      "id": "calculus-1",
+      "description": "Mathematical formulas on a chalkboard",
+      "imageUrl": "https://images.unsplash.com/photo-1758685734671-21838fcd724e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYWxjdWx1cyUyMGNoYWxrYm9hcmR8ZW58MHx8fHwxNzYzMTU5NjU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calculus chalkboard"
+    },
+    {
+      "id": "wwii-1",
+      "description": "A historical photo from World War II",
+      "imageUrl": "https://images.unsplash.com/photo-1583331083321-0d4fd2b03cc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoaXN0b3JpY2FsJTIwcGhvdG98ZW58MHx8fHwxNzYzMTU5NjU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historical photo"
+    },
+    {
+      "id": "astronomy-1",
+      "description": "A colorful nebula in outer space",
+      "imageUrl": "https://images.unsplash.com/photo-1650365449083-b3113ff48337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuZWJ1bGElMjBzcGFjZXxlbnwwfHx8fDE3NjMxNTk2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nebula space"
+    }
+  ]
+}
