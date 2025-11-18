@@ -25,12 +25,12 @@ APPLICATIONS = {
         "directory": "frontends/LibreClass",
         "description": "Gestión de grados, materias y materiales educativos.",
     },
-    "kiwix": {
-        "id": "kiwix",
-        "name": "Kiwix / LibreWiki",
+    "librewiki": {
+        "id": "librewiki",
+        "name": "LibreWiki",
         "port": 3003,
         "command": ["npm", "run", "dev"],
-        "directory": "frontends/Kiwix",
+        "directory": "frontends/LibreWiki",
         "description": "Enciclopedia y recursos offline.",
     },
     "librecordings": {
